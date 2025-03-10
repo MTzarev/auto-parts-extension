@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Parts Extension",
+  "version": "0.1.0",
+  "description": "A simple auto-parts extension",
+  "icons": {
+    "16": "favicon-16x16.png",
+    "32": "favicon-32x32.png",
+    "128": "android-chrome-192x192.png"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "favicon-16x16.png",
+      "32": "favicon-32x32.png",
+      "128": "android-chrome-192x192.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage",
+    "activeTab"
+  ]
+}
